@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TicTacToe"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="MainWindow" Height="306.56" Width="292.908">
+    <Grid Width="400" Height="400">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="39*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="63*"/>
+            <RowDefinition Height="294*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="29*"/>
+            <ColumnDefinition Width="171*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="" HorizontalAlignment="Left" Height="60" Margin="25,0,0,0" VerticalAlignment="Top" Width="60" Grid.ColumnSpan="2" Click="buttonClicked" Grid.Row="2" Tag="11"/>
+        <Button Content="" HorizontalAlignment="Left" Height="60" Margin="54,0,0,0" VerticalAlignment="Top" Width="60" Grid.Column="1" Grid.Row="2" Tag="12" Click="buttonClicked"/>
+        <Button Content="" HorizontalAlignment="Left" Height="60" Margin="142,0,0,0" VerticalAlignment="Top" Width="60" Grid.Column="1" Grid.Row="2" Tag="13" Click="buttonClicked"/>
+        <Button Content="" HorizontalAlignment="Left" Height="60" Margin="25,0,0,0" VerticalAlignment="Top" Width="60" Grid.ColumnSpan="2" Grid.Row="3" Tag="21" Click="buttonClicked"/>
+        <Button Content="" HorizontalAlignment="Left" Height="60" Margin="54,0,0,0" VerticalAlignment="Top" Width="60" Grid.Column="1" Grid.Row="3" Tag="22" Click="buttonClicked"/>
+        <Button Content="" HorizontalAlignment="Left" Height="60" Margin="142,0,0,0" VerticalAlignment="Top" Width="60" Grid.Column="1" Grid.Row="3" Tag="23" Click="buttonClicked"/>
+        <Button Content="" HorizontalAlignment="Left" Height="60" Margin="25,66,0,0" VerticalAlignment="Top" Width="60" Grid.ColumnSpan="2" Grid.Row="3" Tag="31" Click="buttonClicked"/>
+        <Button Content="" HorizontalAlignment="Left" Height="60" Margin="54,66,0,0" VerticalAlignment="Top" Width="60" Grid.Column="1" Grid.Row="3" Tag="32" Click="buttonClicked"/>
+        <Button Content="" HorizontalAlignment="Left" Height="60" Margin="142,66,0,0" VerticalAlignment="Top" Width="60" Grid.Column="1" Grid.Row="3" Tag="33" Click="buttonClicked"/>
+
     </Grid>
 </Window>
