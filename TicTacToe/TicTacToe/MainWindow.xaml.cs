@@ -29,13 +29,7 @@ namespace TicTacToe
         { }
 
 
-            private enum Player //isvardinimas, kuriem galim priskirt reiksmes
-        {
-            X = 1,
-            O = 2
-
-        }
-            
+       
 
         
 
