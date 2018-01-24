@@ -22,22 +22,35 @@ namespace DesktopCalculator
     {
 
         private string part1 = "";
+        private string part2 = "";
+        private string action;
 
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void Execute_Button_Click(object sender, RoutedEventArgs e)
-        {
-           
-        }
+        
 
         private void num1Btn_Click(object sender, RoutedEventArgs e)
         {
             string buttonValue = ((Button)sender).Content.ToString();
             ResultBox.Text = ResultBox.Text + ((Button)sender).Content;
             part1 = part1 + buttonValue;
+        
+        }
+
+        private void plusBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ResultBox.Text = ResultBox.Text + "+";
+            part2 = part1;
+            part1 = "";
+            action = "+";
+        }
+
+        private void Execute_Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
