@@ -47,15 +47,17 @@ namespace TicTacToe
             int x = int.Parse(coordinates[0].ToString()) - 1; //nes tagai blogi, matrica ima nuo 0. tai turejo but 01
             int y = int.Parse(coordinates[1].ToString()) - 1;
 
-            _matrix[x, y] = (int)_player; //nes i matrica galima rasyti tik skaitine reiksme 
 
 
+            if (_matrix[x, y] == 0)
+            {
+                _matrix[x, y] = (int)_player; //nes i matrica galima rasyti tik skaitine reiksme 
 
-            ((Button)sender).Content = _player == Player.O ? "0" : "x";
-            ((Button)sender).Foreground = _player == Player.O ? Brushes.Blue : Brushes.Red;
+                ((Button)sender).Content = _player == Player.O ? "0" : "x";
+                ((Button)sender).Foreground = _player == Player.O ? Brushes.Blue : Brushes.Red;
 
-            _player = _player == Player.O ? Player.X : Player.O;
-                     
+                _player = _player == Player.O ? Player.X : Player.O;
+            }         
         }
     }
 }
