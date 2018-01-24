@@ -7,9 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button x:Name="Execute_Button" Content="Button" HorizontalAlignment="Left" Margin="208,173,0,0" VerticalAlignment="Top" Width="75" Click="Execute_Button_Click"/>
-        <TextBox x:Name="Teksto_dezute" HorizontalAlignment="Left" Height="23" Margin="208,66,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="Etikete" Content="Label" HorizontalAlignment="Left" Margin="208,112,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="executeBtn" Content="=" HorizontalAlignment="Left" Margin="262,199,0,0" VerticalAlignment="Top" Width="75" Click="Execute_Button_Click" RenderTransformOrigin="-0.28,0.85"/>
+        <TextBox x:Name="ResultBox" HorizontalAlignment="Left" Height="23" Margin="24,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="313" IsEnabled="False" RenderTransformOrigin="-0.408,0.652"/>
+        <Button x:Name="num1btn" Content="1" HorizontalAlignment="Left" Margin="120,60,0,0" VerticalAlignment="Top" Width="28" Height="28"/>
+        <Button x:Name="num1btn_Copy" Content="1" HorizontalAlignment="Left" Margin="120,60,0,0" VerticalAlignment="Top" Width="28" Height="28"/>
+        <Button x:Name="num1btn_Copy1" Content="1" HorizontalAlignment="Left" Margin="120,60,0,0" VerticalAlignment="Top" Width="28" Height="28"/>
+        <Button x:Name="num1btn_Copy2" Content="1" HorizontalAlignment="Left" Margin="120,60,0,0" VerticalAlignment="Top" Width="28" Height="28" RenderTransformOrigin="0.071,2.071"/>
+        <Button x:Name="num2Btn" Content="2" HorizontalAlignment="Left" Margin="164,60,0,0" VerticalAlignment="Top" Width="28" Height="28" RenderTransformOrigin="0.071,2.071" Click="num1Btn_Click"/>
+        <Button x:Name="num3Btn" Content="3" HorizontalAlignment="Left" Margin="208,60,0,0" VerticalAlignment="Top" Width="28" Height="28" RenderTransformOrigin="0.071,2.071" Click="num1Btn_Click"/>
+        <Button x:Name="num4Btn" Content="4" HorizontalAlignment="Left" Margin="120,106,0,0" VerticalAlignment="Top" Width="28" Height="28" RenderTransformOrigin="0.071,2.071" Click="num1Btn_Click"/>
+        <Button x:Name="num1Btn" Content="1" HorizontalAlignment="Left" Margin="120,60,0,0" VerticalAlignment="Top" Width="28" Height="28" RenderTransformOrigin="0.071,2.071" Click="num1Btn_Click"/>
+        <Button x:Name="num5Btn" Content="5" HorizontalAlignment="Left" Margin="164,106,0,0" VerticalAlignment="Top" Width="28" Height="28" RenderTransformOrigin="0.071,2.071" Click="num1Btn_Click"/>
+        <Button x:Name="num6Btn" Content="6" HorizontalAlignment="Left" Margin="208,106,0,0" VerticalAlignment="Top" Width="28" Height="28" RenderTransformOrigin="0.071,2.071" Click="num1Btn_Click"/>
+        <Button x:Name="num7Btn" Content="7" HorizontalAlignment="Left" Margin="120,154,0,0" VerticalAlignment="Top" Width="28" Height="28" RenderTransformOrigin="0.071,2.071" Click="num1Btn_Click"/>
+        <Button x:Name="num8Btn" Content="8" HorizontalAlignment="Left" Margin="164,154,0,0" VerticalAlignment="Top" Width="28" Height="28" RenderTransformOrigin="0.071,2.071" Click="num1Btn_Click"/>
+        <Button x:Name="num9Btn" Content="9" HorizontalAlignment="Left" Margin="208,154,0,0" VerticalAlignment="Top" Width="28" Height="28" RenderTransformOrigin="0.071,2.071" Click="num1Btn_Click"/>
+        <Button x:Name="num0Btn" Content="0" HorizontalAlignment="Left" Margin="164,199,0,0" VerticalAlignment="Top" Width="28" Height="28" RenderTransformOrigin="0.071,2.071" Click="num1Btn_Click"/>
 
     </Grid>
 </Window>
