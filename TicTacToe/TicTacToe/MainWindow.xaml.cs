@@ -43,7 +43,7 @@ namespace TicTacToe
 
         private Player? DetermineWinner() //metodas kuri praeina matrica ir tikrina ar kruis nors surenka 3 is eiles. grazinam playeri kuris surinko
         {
-            return Player.O;
+            return null;
 
         }
 
