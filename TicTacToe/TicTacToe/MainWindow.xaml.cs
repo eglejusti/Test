@@ -28,9 +28,17 @@ namespace TicTacToe
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
+            
+
         }
 
         private bool _player = false; // false - x, true - 0 
+        private int[,] _matrix = new int[,] {          // masyvas masyve
+            { 0, 0, 0 },
+            { 0, 0, 0 },
+            { 0, 0, 0 }
+
+        };
 
         private void buttonClicked(object sender, RoutedEventArgs e)
         {
