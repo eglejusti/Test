@@ -26,13 +26,20 @@ namespace TicTacToe
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
-        {
+        { }
 
-            
+
+            private enum Player //isvardinimas, kuriem galim priskirt reiksmes
+        {
+            X = 1,
+            O = 2
 
         }
+            
 
-        private bool _player = false; // false - x, true - 0 
+        
+
+        private Player _player = Player.O; // false - x, true - 0 
         private int[,] _matrix = new int[,] {          // masyvas masyve
             { 0, 0, 0 },
             { 0, 0, 0 },
@@ -46,10 +53,10 @@ namespace TicTacToe
             int x = int.Parse(coordinates[0].ToString());
             int y = int.Parse(coordinates[1].ToString());
 
-            _player = !_player;
+        _player = _player == Player.O ? Player.X : Player.O;
 
-            ((Button)sender).Content = _player == true ? "0" : "x";
-            ((Button)sender).Foreground = _player == true ? Brushes.Blue : Brushes.Red;
+            ((Button)sender).Content = _player == Player.O ? "0" : "x";
+            ((Button)sender).Foreground = _player == Player.O ? Brushes.Blue : Brushes.Red;
 
         }
     }
