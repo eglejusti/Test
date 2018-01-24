@@ -50,7 +50,19 @@ namespace DesktopCalculator
 
         private void Execute_Button_Click(object sender, RoutedEventArgs e)
         {
+            int part1num = int.Parse(part1);
+            int part2num = int.Parse(part2);
+            if(action == "+")
+            {
+                ResultBox.Text = (part1num + part2num).ToString();
+            }
 
+                 else if (action == "-")
+            {
+                ResultBox.Text = (part2num - part1num).ToString();
+            }
+            
+            part1 = ResultBox.Text;
         }
 
         private void minusBtn_Click(object sender, RoutedEventArgs e)
