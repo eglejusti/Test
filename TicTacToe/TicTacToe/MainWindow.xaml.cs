@@ -41,17 +41,21 @@ namespace TicTacToe
 
         };
 
-        private void buttonClicked(object sender, RoutedEventArgs e)
+        private void buttonClicked(object sender, RoutedEventArgs e)  //metodas
         {
             string coordinates = ((Button)sender).Tag.ToString();
-            int x = int.Parse(coordinates[0].ToString());
-            int y = int.Parse(coordinates[1].ToString());
+            int x = int.Parse(coordinates[0].ToString()) - 1; //nes tagai blogi, matrica ima nuo 0. tai turejo but 01
+            int y = int.Parse(coordinates[1].ToString()) - 1;
 
-        _player = _player == Player.O ? Player.X : Player.O;
+            _matrix[x, y] = (int)_player; //nes i matrica galima rasyti tik skaitine reiksme 
+
+
 
             ((Button)sender).Content = _player == Player.O ? "0" : "x";
             ((Button)sender).Foreground = _player == Player.O ? Brushes.Blue : Brushes.Red;
 
+            _player = _player == Player.O ? Player.X : Player.O;
+                     
         }
     }
 }
