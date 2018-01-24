@@ -41,6 +41,13 @@ namespace TicTacToe
 
         };
 
+        private Player? DetermineWinner() //metodas kuri praeina matrica ir tikrina ar kruis nors surenka 3 is eiles. grazinam playeri kuris surinko
+        {
+            return Player.O;
+
+        }
+
+
         private void buttonClicked(object sender, RoutedEventArgs e)  //metodas
         {
             string coordinates = ((Button)sender).Tag.ToString();
@@ -52,6 +59,13 @@ namespace TicTacToe
             if (_matrix[x, y] == 0)
             {
                 _matrix[x, y] = (int)_player; //nes i matrica galima rasyti tik skaitine reiksme 
+
+                Player? winner = DetermineWinner();
+                if (winner != null)
+                {
+                    winnerLbl.Content = winner == Player.X ? "X" : "O" + " has won!";              
+                }
+
 
                 ((Button)sender).Content = _player == Player.O ? "0" : "x";
                 ((Button)sender).Foreground = _player == Player.O ? Brushes.Blue : Brushes.Red;
