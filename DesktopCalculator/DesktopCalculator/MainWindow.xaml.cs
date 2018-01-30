@@ -29,7 +29,7 @@ namespace DesktopCalculator
         {
             InitializeComponent();
         }
-               
+                
 
         private void num1Btn_Click(object sender, RoutedEventArgs e)
         {
@@ -59,20 +59,12 @@ namespace DesktopCalculator
             }
             catch (DivideByZeroException ex)
             {
-                ResultBox.Text = "Division by 0 not allowed");
+                ResultBox.Text = "Division by 0 not allowed";
             }
                 
             part1 = ResultBox.Text;
         }
-
-        //
-        private void minusBtn_Click(object sender, RoutedEventArgs e)
-        {
-            ResultBox.Text = ResultBox.Text + "-";
-            part2 = part1;
-            part1 = "";
-            action = "-";
-        }//
+              
 
     }
 }
