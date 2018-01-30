@@ -53,25 +53,12 @@ namespace DesktopCalculator
             int part1num = int.Parse(part1);
             int part2num = int.Parse(part2);
 
-            switch (action)
-            {
-                case "+":
-                    ResultBox.Text = (part1num + part2num).ToString();
-                    break;
-                case "-":
-                    ResultBox.Text = (part1num - part2num).ToString();
-                    break;                
-                case "x":
-                    ResultBox.Text = (part1num * part2num).ToString();
-                    break;
-                case "/":
-                    ResultBox.Text = (part1num / part2num).ToString();
-                    break;
+            Arithmetics arithmetics = new Arithmetics();
+            ResultBox.Text = arithmetics.Calculate(part2num, part1num, action).ToString;
 
-            }
+            
             //
-
-            if(action == "+")
+                        if(action == "+")
             {
                 ResultBox.Text = (part1num + part2num).ToString();
             }
