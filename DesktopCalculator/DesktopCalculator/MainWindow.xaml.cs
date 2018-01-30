@@ -40,12 +40,12 @@ namespace DesktopCalculator
         
         }
 
-        private void plusBtn_Click(object sender, RoutedEventArgs e)
+        private void action_Click(object sender, RoutedEventArgs e)
         {
-            ResultBox.Text = ResultBox.Text + "+";
+            ResultBox.Text = ResultBox.Text + ((Button)sender).Content.ToString();
             part2 = part1;
             part1 = "";
-            action = "+";
+            action = ((Button)sender).Content.ToString();
         }
 
         private void Execute_Button_Click(object sender, RoutedEventArgs e)
@@ -61,16 +61,28 @@ namespace DesktopCalculator
             {
                 ResultBox.Text = (part2num - part1num).ToString();
             }
-            
+
+            else if (action == "x")
+            {
+                ResultBox.Text = (part2num * part1num).ToString();
+            }
+
+            else if (action == "/")
+            {
+                ResultBox.Text = (part2num / part1num).ToString();
+            }
+
+
+
             part1 = ResultBox.Text;
         }
-
+        //
         private void minusBtn_Click(object sender, RoutedEventArgs e)
         {
             ResultBox.Text = ResultBox.Text + "-";
             part2 = part1;
             part1 = "";
             action = "-";
-        }
+        }//
     }
 }
