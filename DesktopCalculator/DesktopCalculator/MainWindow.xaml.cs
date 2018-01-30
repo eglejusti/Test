@@ -29,8 +29,7 @@ namespace DesktopCalculator
         {
             InitializeComponent();
         }
-
-        
+               
 
         private void num1Btn_Click(object sender, RoutedEventArgs e)
         {
@@ -54,34 +53,18 @@ namespace DesktopCalculator
             int part2num = int.Parse(part2);
 
             Arithmetics arithmetics = new Arithmetics();
+            try
+            { 
             ResultBox.Text = arithmetics.Calculate(part2num, part1num, action).ToString;
-
-            
-            //
-                        if(action == "+")
-            {
-                ResultBox.Text = (part1num + part2num).ToString();
             }
-
-                 else if (action == "-")
+            catch (DivideByZeroException ex)
             {
-                ResultBox.Text = (part2num - part1num).ToString();
+                ResultBox.Text = "Division by 0 not allowed");
             }
-
-            else if (action == "x")
-            {
-                ResultBox.Text = (part2num * part1num).ToString();
-            }
-
-            else if (action == "/")
-            {
-                ResultBox.Text = (part2num / part1num).ToString();
-            }
-            //
-
-
+                
             part1 = ResultBox.Text;
         }
+
         //
         private void minusBtn_Click(object sender, RoutedEventArgs e)
         {
@@ -90,5 +73,6 @@ namespace DesktopCalculator
             part1 = "";
             action = "-";
         }//
+
     }
 }

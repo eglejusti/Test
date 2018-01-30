@@ -8,7 +8,7 @@ namespace DesktopCalculator
 {
     public class Arithmetics
     {
-        public int Calculate(int num1, num2, string action)
+        public int Calculate(int num1, int num2, string action)
         {
             int result= 0; //grazins 0 jei nei vienas if nebus tenkinamas//
             switch (action)
@@ -23,7 +23,10 @@ namespace DesktopCalculator
                     result = num2 * num1;
                     break;
                 case "/":
-                    result = num2 / num1;
+                    {                    {
+                        result = num2 / num1;
+                    }
+
                     break;
 
             }
