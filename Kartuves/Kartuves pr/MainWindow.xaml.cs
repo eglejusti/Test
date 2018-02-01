@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,7 +28,12 @@ namespace Kartuves_pr
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            string[] words = File.ReadAllLines("words.txt");
 
+
+            Random random = new Random();
+            int randomIndex = random.Next(0, words.Length - 1);
+            string word = words[randomIndex];
         }
     }
 }
