@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kartuves", "Kartuves\Kartuves.csproj", "{F7E953B4-C97D-4783-BBA6-5290A3204D0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kartuves pr", "Kartuves pr\Kartuves pr.csproj", "{BEB69FA5-5D74-4DC6-8CD8-D35C1E3DF0F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7E953B4-C97D-4783-BBA6-5290A3204D0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7E953B4-C97D-4783-BBA6-5290A3204D0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7E953B4-C97D-4783-BBA6-5290A3204D0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7E953B4-C97D-4783-BBA6-5290A3204D0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEB69FA5-5D74-4DC6-8CD8-D35C1E3DF0F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEB69FA5-5D74-4DC6-8CD8-D35C1E3DF0F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEB69FA5-5D74-4DC6-8CD8-D35C1E3DF0F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEB69FA5-5D74-4DC6-8CD8-D35C1E3DF0F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3A2BF66-2AC3-44EF-B394-78F17F03981B}
+	EndGlobalSection
+EndGlobal

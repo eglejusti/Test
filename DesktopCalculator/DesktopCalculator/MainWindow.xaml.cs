@@ -24,6 +24,7 @@ namespace DesktopCalculator
         private string part1 = "";
         private string part2 = "";
         private string action;
+        private bool signSelected = false; 
 
         public MainWindow()
         {
@@ -36,15 +37,32 @@ namespace DesktopCalculator
             string buttonValue = ((Button)sender).Content.ToString();
             ResultBox.Text = ResultBox.Text + ((Button)sender).Content;
             part1 = part1 + buttonValue;
-        
+            signSelected = false;
         }
 
         private void action_Click(object sender, RoutedEventArgs e)
         {
-            ResultBox.Text = ResultBox.Text + ((Button)sender).Content.ToString();
-            part2 = part1;
-            part1 = "";
-            action = ((Button)sender).Content.ToString();
+            if (signSelected)
+            {
+                ResultBox.Text = ResultBox.Text.Substring(0, ResultBox.Text.Length - 1).ToString();
+            }
+                
+            else
+
+            
+            {
+                ResultBox.Text = ResultBox.Text + ((Button)sender).Content.ToString();
+
+                part2 = part1;
+                part1 = "";
+
+                signSelected = true;
+
+                action = ((Button)sender).Content.ToString();
+            }
+
+           
+
         }
 
         private void Execute_Button_Click(object sender, RoutedEventArgs e)
@@ -55,7 +73,7 @@ namespace DesktopCalculator
             Arithmetics arithmetics = new Arithmetics();
             try
             { 
-            ResultBox.Text = arithmetics.Calculate(part2num, part1num, action).ToString;
+            ResultBox.Text = arithmetics.Calculate(part2num, part1num, action).ToString();
             }
             catch (DivideByZeroException ex)
             {
